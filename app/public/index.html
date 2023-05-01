@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Truculenta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Parqués</title>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="encabezado">
+                <h1 class="titulo">Parqués</h1>
+            </div>
+            <div class="linea-1"></div>
+            <div class="linea-2"></div>
+            <div class="linea-3"></div>
+        </header>
+        <article>
+            <div class="datos">
+                <h2 class="nombre">Nombre</h2>
+                <input type="text" class="nik-name" id="nombre__jugador" maxlength="10">
+            </div>
+            <div class="imagenes">
+                <h2 class="caracteres">Imagen</h2>
+                <div class="imagenes__contenedor">
+                    <div class="img añadir_img_1 seleccionado" id="img_1"></div>
+                    <div class="img añadir_img_2" id="img_2"></div>
+                    <div class="img añadir_img_3" id="img_3"></div>
+                    <div class="img añadir_img_4" id="img_4"></div>
+                </div>
+                <div class="imagenes__contenedor">
+                    <div class="img añadir_img_5" id="img_5"></div>
+                    <div class="img añadir_img_6" id="img_6"></div>
+                    <div class="img añadir_img_7" id="img_7"></div>
+                    <div class="img añadir_img_8" id="img_8"></div>
+                </div>
+            </div>
+            <div class="contenedor-botones">
+                <button class="boton" id="boton__crear">Crear Juego</button>
+                <button class="boton" id="boton__unirse">Unirse a Juego</button>
+            </div>
+            <div class="contenedor_crear" id="contenedor_crear">
+                <div class="crear ocultar" id="crear">
+                    <p id="crear__cerrar" class="__cerrar">x</p>
+                    <h2>Numero de jugadores</h2>
+                    <div class="num_jugadores">
+                        <p class="num_jugadores_numero cantidad_seleccionada" id="cantidad_1">2</p>
+                        <p class="num_jugadores_numero" id="cantidad_2">3</p>
+                        <p class="num_jugadores_numero" id="cantidad_3">4</p>
+                    </div>
+                    <h2>Codigo:</h2>
+                    <p class="crear__codigo" id="crear__codigo">00000</p>
+                    <button class="iniciar__juego" id="crear__iniciar__juego">Iniciar juego</button>
+                </div>
+            </div>
+            <div class="contenedor_unirse" id="contenedor_unirse">
+                <div class="unirse ocultar" id="unirse">
+                    <p class="__cerrar" id="unirse_cerrar">x</p>
+                    <h2>Codigo de sala:</h2>
+                    <input type="text" class="codigo_ingresado" id="codigo_ingresado">
+                    <button class="iniciar__juego" id="unirse__iniciar__juego">iniciar juego</button>
+                </div>    
+            </div>
+            <script src="/socket.io/socket.io.js"></script>
+            <script src="js/index.js"></script>
+            <script src="js/crear.js"></script>     
+            <script src="js/unirse.js"></script>
+            <script src="js/añadir_interface.js"></script>
+            
+        </article>
+        <footer>
+            <div class="pie">
+
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

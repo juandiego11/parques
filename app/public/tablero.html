@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Truculenta:wght@500&display=swap" rel="stylesheet">
+    <title>Parqués</title>
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <div class="baner">
+                <h1 class="titulo">Parqués</h1>
+            </div>
+            <div class="linea-1"></div>
+            <div class="linea-2"></div>
+            <div class="linea-3"></div>
+        </header>
+
+        <article>
+            <div class="padre">
+                <div class="contenedor">
+                    <div class="tablero">
+
+                    <div class="centro"></div>
+                    <div class="posibles_tiros" id="posibles_tiros">
+                        <p id="posibles_tiros_tiro1" class="posibles_tiros_tiro tiro_ejecutar"></p>
+                        <p id="posibles_tiros_tiro2" class="posibles_tiros_tiro"></p>
+                    </div>
+
+                    <div class="rojo">
+                        <div class="circulo opacidad_ciculo"></div>
+                    </div>
+                    
+                    <div class="pieza_roja" id="pieza_roja_1"></div>
+                    <div class="pieza_roja" id="pieza_roja_2"></div>
+                    <div class="pieza_roja" id="pieza_roja_3"></div>
+
+                    <div class="pieza_verde" id="pieza_verde_1"></div>
+                    <div class="pieza_verde" id="pieza_verde_2"></div>
+                    <div class="pieza_verde" id="pieza_verde_3"></div>
+                    
+                    <div class="pieza_azul" id="pieza_azul_1"></div>
+                    <div class="pieza_azul" id="pieza_azul_2"></div>
+                    <div class="pieza_azul" id="pieza_azul_3"></div>
+                    
+                    <div class="pieza_amarilla" id="pieza_amarilla_1"></div>
+                    <div class="pieza_amarilla" id="pieza_amarilla_2"></div>
+                    <div class="pieza_amarilla" id="pieza_amarilla_3"></div>
+
+                    <div class="casilla rojo-1"></div>
+                    <div class="casilla rojo-2"></div>
+                    <div class="casilla rojo-3"></div>
+                    <div class="casilla rojo-4"></div>
+                    <div class="casilla rojo-5 color_rojo"></div>
+                    <div class="casilla rojo-6"></div>
+                    <div class="casilla rojo-7"></div>
+                    
+                    <div class="casilla rojo-8 color_gris"></div>
+                    <div class="casilla rojo-9 color_rojo"></div>
+                    <div class="casilla rojo-10 color_rojo"></div>
+                    <div class="casilla rojo-11 color_rojo"></div>
+                    <div class="casilla rojo-12 color_rojo"></div>
+                    <div class="casilla rojo-13 color_rojo"></div>
+                    <div class="casilla rojo-14 color_rojo"></div>
+                    
+                    <div class="casilla rojo-15"></div>
+                    <div class="casilla rojo-16"></div>
+                    <div class="casilla rojo-17"></div>
+                    <div class="casilla rojo-18"></div>
+                    <div class="casilla rojo-19 color_gris"></div>
+                    <div class="casilla rojo-20"></div>
+                    <div class="casilla rojo-21"></div>
+
+                    <div class="casilla rojo-22"></div>
+                    <div class="casilla rojo-23 color_rojo"></div>
+                    <div class="casilla rojo-24"></div>
+                    
+                    <div class="verde">
+                        <div class="circulo opacidad_ciculo"></div>
+                    </div>
+
+                    <div class="casilla verde-1"></div>
+                    <div class="casilla verde-2"></div>
+                    <div class="casilla verde-3"></div>
+                    <div class="casilla verde-4"></div>
+                    <div class="casilla verde-5 color_gris"></div>
+                    <div class="casilla verde-6"></div>
+                    <div class="casilla verde-7"></div>
+                    
+                    <div class="casilla verde-8 color_gris"></div>
+                    <div class="casilla verde-9 color_verde"></div>
+                    <div class="casilla verde-10 color_verde"></div>
+                    <div class="casilla verde-11 color_verde"></div>
+                    <div class="casilla verde-12 color_verde"></div>
+                    <div class="casilla verde-13 color_verde"></div>
+                    <div class="casilla verde-14 color_verde"></div>
+                    
+                    <div class="casilla verde-15"></div>
+                    <div class="casilla verde-16"></div>
+                    <div class="casilla verde-17"></div>
+                    <div class="casilla verde-18"></div>
+                    <div class="casilla verde-19 color_verde"></div>
+                    <div class="casilla verde-20"></div>
+                    <div class="casilla verde-21"></div>
+
+                    <div class="casilla verde-22"></div>
+                    <div class="casilla verde-23 color_verde"></div>
+                    <div class="casilla verde-24"></div>
+
+                    <div class="azul">
+                        <div class="circulo opacidad_ciculo"></div>
+                    </div>
+
+                    <div class="casilla azul-1"></div>
+                    <div class="casilla azul-2"></div>
+                    <div class="casilla azul-3 color_azul"></div>
+                    <div class="casilla azul-4"></div>
+                    <div class="casilla azul-5"></div>
+                    <div class="casilla azul-6"></div>
+                    <div class="casilla azul-7"></div>
+                    
+                    <div class="casilla azul-8 color_azul"></div>
+                    <div class="casilla azul-9 color_azul"></div>
+                    <div class="casilla azul-10 color_azul"></div>
+                    <div class="casilla azul-11 color_azul"></div>
+                    <div class="casilla azul-12 color_azul"></div>
+                    <div class="casilla azul-13 color_azul"></div>
+                    <div class="casilla azul-14 color_gris"></div>
+                    
+                    <div class="casilla azul-15"></div>
+                    <div class="casilla azul-16"></div>
+                    <div class="casilla azul-17 color_gris"></div>
+                    <div class="casilla azul-18"></div>
+                    <div class="casilla azul-19"></div>
+                    <div class="casilla azul-20"></div>
+                    <div class="casilla azul-21"></div>
+
+                    <div class="casilla azul-22"></div>
+                    <div class="casilla azul-23 color_azul"></div>
+                    <div class="casilla azul-24"></div>
+
+                    <div class="amarillo">
+                        <div class="circulo opacidad_ciculo"></div>
+                    </div>
+
+                    <div class="casilla amarillo-1"></div>
+                    <div class="casilla amarillo-2"></div>
+                    <div class="casilla amarillo-3 color_gris"></div>
+                    <div class="casilla amarillo-4"></div>
+                    <div class="casilla amarillo-5"></div>
+                    <div class="casilla amarillo-6"></div>
+                    <div class="casilla amarillo-7"></div>
+                    
+                    <div class="casilla amarillo-8 color_amarillo"></div>
+                    <div class="casilla amarillo-9 color_amarillo"></div>
+                    <div class="casilla amarillo-10 color_amarillo"></div>
+                    <div class="casilla amarillo-11 color_amarillo"></div>
+                    <div class="casilla amarillo-12 color_amarillo"></div>
+                    <div class="casilla amarillo-13 color_amarillo"></div>
+                    <div class="casilla amarillo-14 color_gris"></div>
+                    
+                    <div class="casilla amarillo-15"></div>
+                    <div class="casilla amarillo-16"></div>
+                    <div class="casilla amarillo-17 color_amarillo"></div>
+                    <div class="casilla amarillo-18"></div>
+                    <div class="casilla amarillo-19"></div>
+                    <div class="casilla amarillo-20"></div>
+                    <div class="casilla amarillo-21"></div>
+
+                    <div class="casilla amarillo-22"></div>
+                    <div class="casilla amarillo-23 color_amarillo"></div>
+                    <div class="casilla amarillo-24"></div>
+
+                    <div class="casilla extra-1"></div>
+                    <div class="casilla extra-2"></div>
+                    <div class="casilla extra-3"></div>
+                    <div class="casilla extra-4"></div>
+
+                </div>
+                <div class="jugadores derecha">
+                    <div class="jugador-1">
+                        <div class="img "></div>
+                        <h2 class="nombre_jugador">Player</h2>
+                    </div>
+                    <div class="jugador-2">
+                        <div class="img"></div>
+                        <h2 class="nombre_jugador">Player</h2>
+                    </div>
+                </div>
+                <div class="jugadores izquierda">
+                    <div class="jugador-1">
+                        <div class="img turno"></div>
+                        <h2 class="nombre_jugador">Player</h2>
+                    </div>
+                    <div class="jugador-2">
+                        <div class="img"></div>
+                        <h2 class="nombre_jugador">Player</h2>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+
+        <aside>
+            <div class="madera">
+                <h2 class="tiempo">0:60</h2>
+                <div class="dados">
+                    <div class="dado dado_numero_1" id="dado_1"></div>
+                    <div class="dado dado_numero_1" id="dado_2"></div>
+                </div>
+            </div>
+            <script src="js/dados.js"></script>
+            <button class="abandonar" onclick="location.href='index.html'">Abandonar</button>
+            
+        </aside>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/mover_piezas.js"></script>
+        <script src="js/añadir_interface.js"></script>
+        <footer>
+            <div class="pie">
+
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
